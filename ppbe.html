@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Program Penjualan Elektronik</title>
+    <link rel="stylesheet" href="ppbe.css">
+</head>
+<body>
+    <div class="card">
+        <h2>Kasir Toko Elektronik</h2>
+        
+        <div class="form-group">
+            <label>Nama Barang:</label>
+            <input type="text" id="namaBarang" placeholder="Contoh: Laptop">
+        </div>
+
+        <div class="form-group">
+            <label>Harga Satuan:</label>
+            <input type="number" id="hargaBarang" placeholder="0">
+        </div>
+
+        <div class="form-group">
+            <label>Jumlah Beli:</label>
+            <input type="number" id="jumlahBeli" placeholder="0">
+        </div>
+
+        <div class="form-group">
+            <label>Aksesoris Tambahan:</label><br>
+            <input type="checkbox" class="aksesoris" value="50000"> USB (50rb) <br>
+            <input type="checkbox" class="aksesoris" value="100000"> Memory (100rb) <br>
+            <input type="checkbox" class="aksesoris" value="150000"> Speaker (150rb)
+        </div>
+
+        <hr>
+
+        <div class="hasil">
+            <p>Total Barang: <span id="resTotalBarang">0</span></p>
+            <p>Pajak (10%): <span id="resPajak">0</span></p>
+            <p><strong>Total Bayar: <span id="resTotalBayar">0</span></strong></p>
+        </div>
+
+        <div class="button-group">
+            <button onclick="proses()" class="btn-proses">Proses</button>
+            <button onclick="reset()" class="btn-reset">Reset</button>
+        </div>
+    </div>
+
+    <script src="ppbe.js"></script>
+</body>
+</html>
